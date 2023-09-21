@@ -1,4 +1,26 @@
-body{
-    background-image: url(../images/juegosmesa.webp);
-    background-size: 100%;
+body {
+    background-color: rgb(177, 40, 40);
 }
+
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-style: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 20px;
+    text-align: center;
+  }
+
+ 

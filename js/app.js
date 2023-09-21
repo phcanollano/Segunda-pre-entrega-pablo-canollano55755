@@ -7,21 +7,21 @@ const productos = [
     { nombre: "Jenga de madera", precio: 3500, marca: "Ruibal" },
     { nombre: "Damas Chinas", precio: 15000, marca: "Ruibal" }
 ]
-    
-const factura = []; 
+
+const factura = [];
 
 let nombreCliente = prompt("Por favor, escriba su nombre");
-alert("Hola " + nombreCliente  + " Bienvenido a Sigamos Jugando Distribuidora");
+alert("Hola " + nombreCliente + " Bienvenido a Sigamos Jugando Distribuidora");
 
 let opcion;
 let salir;
-let total 
+let total
 let cantidad;
 
 
 function menu() {
     do {
-        const listaStringProductos = productos.map((product,index) =>
+        const listaStringProductos = productos.map((product, index) =>
             `${index + 1} - ${product.nombre} $${product.precio}`);
         opcion = parseInt(prompt('Por favor escoja un producto:' + '\n' + listaStringProductos.join('\n')));
 
@@ -31,17 +31,17 @@ function menu() {
 
         cantidad = parseInt(prompt('Ingrese la cantidad deseada:'));
 
-        factura.push(new facturaProducto(productos[opcion-1].nombre,productos[opcion-1].precio,cantidad));
+        factura.push(new facturaProducto(productos[opcion - 1].nombre, productos[opcion - 1].precio, cantidad));
 
         salir = prompt('Desea salir? si/no');
 
-    }while(salir != 'si');
+    } while (salir != 'si');
 }
 
 
 menu();
 
 
-total = factura.reduce((acc,item) => acc + item.subtotal,0);
+total = factura.reduce((acc, item) => acc + item.subtotal, 0);
 
 alert(`El total a pagar de su compra es de: $${total}`);
