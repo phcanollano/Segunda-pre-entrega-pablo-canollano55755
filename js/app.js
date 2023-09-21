@@ -23,10 +23,10 @@ function menu() {
     do {
         const listaStringProductos = productos.map((product, index) =>
             `${index + 1} - ${product.nombre} $${product.precio}`);
-        opcion = parseInt(prompt('Por favor escoja un producto:' + '\n' + listaStringProductos.join('\n')));
+        opcion = parseInt(prompt('Por favor escoja un producto (ingrese el numero):' + '\n' + listaStringProductos.join('\n')));
 
         while (opcion <= 0 || opcion > productos.length || isNaN(opcion) || opcion == undefined) {
-            opcion = parseInt(prompt('por favor escoja un producto:' + '\n' + listaStringProductos.join('\n')));
+            opcion = parseInt(prompt('Por favor escoja un producto (ingrese el numero):' + '\n' + listaStringProductos.join('\n')));
         }
 
         cantidad = parseInt(prompt('Ingrese la cantidad deseada:'));
