@@ -1,7 +1,7 @@
 body {
-    background-color: rgb(177, 40, 40);
-}
-
+    background-image: url(../images/p.jpg);
+    background-size: 100%;
+  }
 
 h1 {
     color: rgb(0, 0, 0);
@@ -14,13 +14,23 @@ h1 {
     text-decoration: underline;
 }
 
-p {
+h2 {
+    color: rgb(0, 0, 0);
+    font-style: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    font-size: 60px;
+    margin-left: 50px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+p{
     color: rgb(0, 0, 0);
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     margin-top: 2%;
     margin-bottom: 2%;
     font-size: 20px;
-    text-align: center;
+    margin-left: 50px;
   }
 
- 
