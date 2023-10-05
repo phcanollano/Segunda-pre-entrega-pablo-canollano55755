@@ -1,5 +1,5 @@
 body {
-    background-image: url(../images/p.jpg);
+    background-color: rgb(116, 12, 12);
     background-size: 100%;
   }
 
@@ -34,3 +34,30 @@ p{
     margin-left: 50px;
   }
 
+  input[type="text"],
+  input[type="email"] {
+      width: auto;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      margin-left: 50px;
+  }
+
+  label {
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+input{
+    margin-right: 20px;
+}
+
+.select {
+  text-align: center;
+  margin-left: 350px;
+}

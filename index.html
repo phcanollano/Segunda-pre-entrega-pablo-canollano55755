@@ -2,13 +2,13 @@
 <html>
 
 <head>
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-     <link href="./css/style.css" rel="stylesheet"> 
-     <title>Sigamos Jugando distribuidora</title>
-    
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Sigamos Jugando distribuidora</title>
+
 </head>
 
 
@@ -20,28 +20,43 @@
     <p>
         En este espacio podés gestionar tu pedido de juegos de mesa para tu emprendimiento
     </p>
+ <div class="form">
+    <label for="nombre">Nombre y Apellido:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+</div>
+
+
     <div class="container m-3 row">
         <div class="container m-1 col">
             <form id="agregar">
-                <p>Elija un producto<p>
-
-                <select id="productos" class="form-control"></select>
-                <br>
-                <button id="agregar" class="btn btn-primary">Agregar</button>
+                <p>Elija un producto
+                <p>
+                <div class="select">
+                    <select id="productos" class="form-control"></select>
+                    <br>
+                    <button id="sumarAlCarrito" class="btn btn-primary">Sumar al Carrito</button>
+                </div>
             </form>
-        </div class= "tr">
-        <div class="container m-1">
-            <table class="table table-striped">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Precio Unitario</th>
-                        <th>Cantidad</th>
-                        <th>Subtotal</th>
-                        <th>Operacion</th>
-                    </tr>
+            <div class="select">
+            </div class="tr">
+            <div class="container m-1">
+                <div class="select">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Precio Unitario</th>
+                                <th>Cantidad</th>
+                                <th>Subtotal</th>
+                                <th>Operacion</th>
+                            </tr>
+                </div>
                 </thead>
                 <tbody id="items">
+
                 </tbody>
                 <tfoot class="thead-dark">
                     <tr>
@@ -52,22 +67,26 @@
                         <th id="total"></th>
                     </tr>
                 </tfoot>
-            </table>
+                </table>
+            </div>
+            <div class="container m-1">
+                <div class="select">
+                    <button id="comprar" class="btn btn-primary">
+                        Comprar
+                    </button>
+                    <button id="eliminar" class="btn btn-primary">
+                        Eliminar
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="container m-1">
-            <button id="ordenar" class="btn btn-primary">
-                Ordenar
-            </button>
-            <button id="vaciar" class="btn btn-primary">
-                Vaciar
-            </button>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="./js/producto.js"></script>
-    <script src="./js/item.js"></script>
-    <script src="./js/carrito.js"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="./js/producto.js"></script>
+        <script src="./js/item.js"></script>
+        <script src="./js/carrito.js"></script>
 </body>
 
 </html>

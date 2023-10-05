@@ -14,11 +14,11 @@ productos.push(new Producto('Damas Chinas',15000));
 localStorage.setItem('productos', JSON.stringify(productos));
 */
 
-
+const nombre = document.getElementById("nombre").value;
+const email = document.getElementById("email").value;
 const selectProductos = document.querySelector('#productos');
 const btnAgregar = document.querySelector('#agregar');
-const btnVaciar = document.querySelector('#vaciar');
-
+const btnVaciar = document.querySelector('#eliminar');
 function traerItemsStorage() {
     productos = JSON.parse(localStorage.getItem('productos')) || [];
     carrito = JSON.parse(localStorage.getItem('carritos')) || [];
@@ -59,12 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
            
             carrito.push(item);
         }
-        Toastify({
-            text: 'Se agrego el item al carrito',
-            duration: 3000,
-            gravity: 'bottom',
-            position: 'right'
-        }).showToast();
+     
 
         localStorage.setItem('carrito',JSON.stringify(carrito)); 
         dibujarTabla();
@@ -73,18 +68,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btnVaciar.addEventListener('click',() => {
         Swal.fire({
-            title: 'Esta seguro de que desea vaciar el carrito?',
+            title: 'Esta seguro que desea eliminar su compra?',
             icon: 'question',
             showCancelButton: true,
             cancelButtonText: 'Cancelar',
-            confirmButtonText: 'Vaciar'
+            confirmButtonText: 'Eliminar'
         }).then((result) => {
             if (result.isConfirmed) {
                 carrito = [];
                 localStorage.setItem('carrito', carrito);
                 dibujarTabla();
                 Swal.fire({
-                    title: 'Carrito vaciado!',
+                    title: 'Compra eliminada!',
                     icon: 'success'
                 });
             }
@@ -102,7 +97,6 @@ function dibujarTabla() {
     bodyTabla.innerHTML = ``; 
     carrito.forEach((item,index) => {
         const {producto: {nombre:nombrep,precio}, cantidad} = item;
-       // const {nombre, marca,precio} = producto;
        const tr = document.createElement('tr');
        tr.classList.add('text-white');
        tr.innerHTML = `
