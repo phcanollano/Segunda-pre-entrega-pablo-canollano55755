@@ -1,11 +1,10 @@
-class Item
-{
+class Item {
   producto
   cantidad;
 
-    constructor(producto, cantidad) {
-        this.producto = producto;
-        this.cantidad= cantidad;
-    }
+  constructor(producto, cantidad) {
+    this.producto = producto;
+    this.cantidad = cantidad;
+  }
 }
 

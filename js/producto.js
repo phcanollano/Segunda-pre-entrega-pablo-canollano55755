@@ -1,10 +1,10 @@
 class Producto {
-    nombre; 
+    nombre;
     precio;
 
-    constructor (nombre, precio){
-     this.nombre = nombre;
-     this. precio = precio;    
+    constructor(nombre, precio) {
+        this.nombre = nombre;
+        this.precio = precio;
     }
 
 }

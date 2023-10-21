@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "nombre": "Ajedrez Ruibal",
+        "precio": 15000
+    },
+    {
+        "id": 2,
+        "nombre": "Monopoly",
+        "precio": 25000
+    },
+    {
+        "id": 3,
+        "nombre": "Domino Ruibal",
+        "precio": 2000
+    },
+    {
+        "id": 4,
+        "nombre": "Naipes Españoles",
+        "precio": 650
+    },
+    {
+        "id": 5,
+        "nombre": "Uno",
+        "precio": 1000
+    },
+    {
+        "id": 6,
+        "nombre": "Jenga de Madera",
+        "precio": 3500
+    },
+    {
+        "id": 6,
+        "nombre": "Damas Chinas",
+        "precio": 1500
+    }
+]
